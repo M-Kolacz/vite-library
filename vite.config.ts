@@ -10,14 +10,14 @@ export default defineConfig({
     react(),
     libInjectCss(),
     dts({
-      include: ['src/components'],
+      include: ['src/components', 'src/index.ts', 'src/types'],
     }),
   ],
   build: {
     copyPublicDir: false,
     cssCodeSplit: true,
     lib: {
-      entry: resolve(__dirname, 'src/components/index.ts'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'VeryFancyComponents',
       fileName: 'very-fancy-components',
       formats: ['es', 'umd'],
@@ -28,6 +28,7 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime',
         },
         // preserveModules: true,
       },
