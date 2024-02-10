@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "vite-components": {
+      "signature": "fb3fa897508307989001061569e341e6",
+      "file": true
+    }
+  }
+}

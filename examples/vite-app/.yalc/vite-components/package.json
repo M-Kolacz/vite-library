@@ -1,0 +1,28 @@
+{
+  "name": "vite-components",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/very-fancy-components.umd.cjs",
+  "module": "./dist/very-fancy-components.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/very-fancy-components.js",
+      "require": "./dist/very-fancy-components.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "yalcSig": "fb3fa897508307989001061569e341e6"
+}
