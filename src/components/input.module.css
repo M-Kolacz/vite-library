@@ -1,0 +1,8 @@
+/* Style for the input field */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
